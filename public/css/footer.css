@@ -1,0 +1,55 @@
+@media screen and (min-width: 992px){
+    .container{
+        max-width:100%;
+    }
+    .w-1200{
+        max-width: 1200px;
+        margin:auto;
+    }
+    .footer-form{
+        background: url('../img/2866_w2000.jpg') no-repeat left center;
+        background-size: 100%;
+    }
+    
+}
+@media screen and (min-width:768px) and  (max-width:991px){
+    .container{
+        max-width:100%;
+    }
+    .w-md-75{
+        max-width: 75%;
+    }
+    .footer-form{
+        background: url('../img/2866_w2000.jpg') no-repeat left center;
+        background-size: cover;
+    }
+}
+@media screen and (max-width:767px){
+    .container{
+        max-width:100%;
+    }
+    .w-md-75{
+        max-width: 75%;
+    }
+    .btn-green{
+        max-width: 50%;
+    }
+    .footer-form{
+        background: url('../img/2866_w2000.jpg') no-repeat left center;
+        background-size: cover;
+    }
+}
+
+.bg-brown{
+    background: #473f3f;
+}
+.text-light-size{
+    color: rgb(204, 204, 204);
+    font-size: 0.9rem;
+}
+.img-w{
+    width: 150px;
+}
+.btn-green{
+    background: #85ae2b;
+}

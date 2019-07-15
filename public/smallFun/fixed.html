@@ -1,0 +1,76 @@
+<!doctype html>  
+<html>  
+<head>  
+<meta charset="utf-8">  
+<title>动态CSS3动画</title>  
+<style>  
+* {margin:0; border:0; padding:0;}  
+body {width:100%; height:2000px;}  
+
+    .fixed {  
+        position: fixed;  
+        top: 0;  
+        width: 100%;  
+        margin: 0 auto;  
+        left: 0;  
+        border-bottom: 2px solid #113f6c;  
+        z-index: 10000;  
+    }  
+
+
+
+
+</style>  
+<script>  
+window.onload = function (){
+		//两种方法：1、通过style.cssText写入样式；2、通过className添加类。  
+		// document.getElementById("div1").style.cssText = "animation: slideLeft 1s 1; "  
+		// document.getElementById("div1").className = "ani";  
+	window.onscroll = function (){  
+		var clienth = document.documentElement.clientHeight;  //屏幕高度
+		var scrollt = document.documentElement.scrollTop + document.body.scrollTop; //滚动条滚动高度
+		var div1 = document.getElementById('div1');
+		var div2 = document.getElementById('div2');
+		if (scrollt+clienth>=1000) {
+			div1.getElementsByClassName('img1')[0].style.cssText = 'animation: slideLeft 1s 1';
+			div1.getElementsByClassName('img2')[0].style.cssText = 'animation: slideBottom 1s 1';
+			div1.getElementsByClassName('img3')[0].style.cssText = 'animation: slideTop 1s 1';
+			div1.getElementsByClassName('img4')[0].style.cssText = 'animation: slideRight 1s 1';
+		}
+		console.log(scrollt+clienth)
+	}  
+}  
+</script>  
+</head>  
+  
+  
+<body>  
+	<div class="header-bottom">  
+        <div class="container">             
+            <div class="logo">  
+                <a href="home"><img src="static/web/images/logo.png" alt="远地资产 " /></a>  
+            </div>  
+            <div class="top-nav">  
+                <span class="menu"> </span>  
+                <ul>  
+                    <li><a href="home" class="scroll" >首页</a></li>  
+                    <li><a href="about" class="scroll">关于我们</a></li>  
+                    <li><a href="services" class="scroll">服务领域</a></li>  
+                    <li><a href="project" class="scroll">业务案例</a></li>  
+                    <li><a href="references" class="scroll">合作伙伴</a></li>  
+                    <li><a href="activities" class="scroll">官方活动</a></li>  
+                    <li><a href="news" class="scroll">新闻资讯</a></li>  
+                    <li><a href="contact" class="scroll">联系我们</a></li>  
+                </ul>  
+            </div>  
+            <div class="clearfix"> </div>  
+        </div>  
+      
+           </div> 
+</body>  
+</html> 
+--------------------- 
+作者：死垃圾 
+来源：CSDN 
+原文：https://blog.csdn.net/sszcome/article/details/65633184 
+版权声明：本文为博主原创文章，转载请附上博文链接！

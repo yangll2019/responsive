@@ -1,0 +1,32 @@
+body,ul,li,div,table,p,h1,h2,h3,h4,h5,h6,dl,dt,dd{margin:0;padding:0;}
+body,ul,li,div,table,{font-family:'arial','宋体'}
+a{text-decoration: none;color:#222;}
+ul,ol{list-style: none;}
+input,button{outline: none;}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/* 清除浮动 */
+.clearfix:after{
+    content:"";
+    display:block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix{
+    *zoom: 1;
+}
+
+.txt_size{
+    font-size: 0.8rem;
+}
+.bg-color{
+    background: #85ae2b;
+}
+.w-color{
+    color: #85ae2b;
+}
